@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Recipes</title>
+    <style>
+        /* Centers the title */
+        h1 {
+            text-align: center;
+        }
+
+        /* Displays recipe cards horizontally and centered */
+        .recipe-list {
+            display: flex;
+            justify-content: center;
+            gap: 100px; /* Space between the three recipes */
+            list-style-type: none; /* Removes default bullet points */
+            padding: 0;
+            margin: 70px auto;
+        }
+
+        /* Centers content inside each recipe card */
+        .recipe-card {
+            text-align: center;
+        }
+
+        /* Makes links clean and legible */
+        .recipe-card a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Consistent image size with rounded edges */
+        .recipe-card img {
+            width: 350px;
+            height: 300px;
+            object-fit: cover; /* Prevents images from stretching */
+            border-radius: 8px;
+        }
+
+        .recipe-card p {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Odin Recipes</h1>
+
+  <!-- Unordered list holding the three recipes in a row -->
+    <ul class="recipe-list">
+        <!-- Recipe 1: Left -->
+        <li class="recipe-card">
+            <a href="recipes/ramen.html">
+                <img src="images/ramen.jpg" alt="Beef Miso Ramen">
+                <p>Beef Miso Ramen</p>
+            </a>
+        </li>
+
+        <!-- Recipe 2: Center -->
+        <li class="recipe-card">
+            <a href="recipes/onigiri.html">
+                <img src="images/onigiri.jpg" alt="Onigiri (Japanese Rice Balls)">
+                <p>Onigiri (Japanese Rice Balls)</p>
+            </a>
+        </li>
+
+        <!-- Recipe 3: Right -->
+        <li class="recipe-card">
+            <a href="recipes/yakiudon.html">
+                <img src="images/yakiudon.jpg" alt="Yaki Udon">
+                <p>Yaki Udon</p>
+            </a>
+        </li>
+    </ul>
+
+
+  
+    
+</body>
+</html>
